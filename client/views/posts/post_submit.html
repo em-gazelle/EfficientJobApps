@@ -1,0 +1,62 @@
+<template name="postSubmit">
+<body id="submitpostpage">
+
+  <form class="main">
+    <div class="control-group">
+<p>
+Dear Recruiters,
+</p>
+<p>
+We're here to make everyone's lives easier and more efficient. <a href="{{pathFor 'about'}}" id="about" class="sisters_reviewing">Read more about MarketPassion here before posting. </a> Please remember that one candidate per job posting must be hired within a 1.5 month period in order to post at MarketPassion. 
+</p>
+<p>Thank you! </br>
+MarketPassion</p>
+</p>
+</div>
+</form>
+
+<h3>Submit a Job Posting:</h3>
+  <form class="main">
+    <div class="control-group">
+        <label class="control-label" for="title">Job Title:</label>
+        <div class="controls">
+            <input name="title" type="text" value="" placeholder="Marketing Assistant"/>
+        </div>
+    </div>
+
+    <div class="control-group">
+        <label class="control-label" for="company">Company:</label>
+        <div class="controls">
+            <input name="company" type="text" value="" placeholder="MarketPassion"/>
+        </div>
+    </div>
+
+    <div class="control-group">
+        <label class="control-label" for="location">Location:</label>
+        <div class="controls">
+            <input name="location" type="text" value="" placeholder="San Francisco, CA"/>
+        </div>
+    </div>
+
+    <div class="control-group">
+        <label class="control-label" for="description">Job Description:</label>
+        <div class="controls">
+            <textarea name="description" type="text" value="" placeholder="The Marketing Assistant will be responsible for...." rows = 7 class="row-fluid"/>
+        </div>
+    </div>
+
+    <div class="control-group">
+        <label class="control-label" for="requirements">Job Requirements:</label>
+        <div class="controls">
+            <textarea name="requirements" type="text" value="" rows=7 placeholder="We are looking for candidates who possess..." class="row-fluid"/>
+        </div>
+    </div>
+
+    <div class="control-group">
+        <div class="controls">
+            <input type="submit" value="Post Job" class="btn btn-primary"/>
+        </div>
+    </div>
+  </form>
+</body>
+</template>
