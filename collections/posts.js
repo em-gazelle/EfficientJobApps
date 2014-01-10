@@ -14,9 +14,9 @@ Posts.deny({
 
 Meteor.methods({
 	post: function(postAttributes) {
-/*		var user = Meteor.user(),
-			postWithSameLink = Posts.findOne({doctor: postAttributes.doctor});
-*/	//ensure the user is logged in
+		var user = Meteor.user(),
+			postWithSameLink = Posts.findOne({company: postAttributes.company});
+	//ensure the user is logged in
 	if (!user)
 {		throw new Meteor.Error(401, "Sorry! You need an account to create a job posting.");
 
