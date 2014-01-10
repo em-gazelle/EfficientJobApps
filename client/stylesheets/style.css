@@ -24,8 +24,9 @@ body {
 .navbar .navbar-inner {
     border-radius: 0px 0px 3px 3px;
 /* background color of navbar, brand logo, etc*/
-    background: #89be4a;
-    border-color: #8dc34e;
+      background: #88d077;
+/*    background: #89be4a;
+*/    border-color: #2e8945;
 }
 
 .navbar .navbar-inner .nav a.selected {
@@ -75,8 +76,9 @@ body#submitpostpage a#submitpost {
     font-size: 14px;
     display: inline-block;
     /*individual posts, reviews: text color of location*/
-    color: yellow;
+    color: #d5efcf;
 }
+
 .post .post-content p { margin: 0 }
 .post .discuss {
     display: block;

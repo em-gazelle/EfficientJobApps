@@ -2,14 +2,10 @@
   <div class="post">
     <a href="#" class="rating"></a>
     <div class="post-content">
-      <h3> {{title}} at {{company}}
+      <h3> {{title}} <span> at </span> {{company}}
           </br> <span> {{location}} </span> </h3>
       </br>
-      <p>  
-        They are looking for kid who will: {{description}}
-      </br>
-        and a kid who knows: {{requirements}}.
-    		{{#if ownPost}}<a href="{{pathFor 'postEdit'}}">Edit</a>{{/if}}
+              {{#if ownPost}}<a href="{{pathFor 'postEdit'}}">Edit</a>{{/if}}
     	</p>
    </div>
     <a href="{{pathFor 'postPage'}}" class="discuss btn">Apply</a>

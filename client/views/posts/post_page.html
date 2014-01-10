@@ -1,5 +1,25 @@
 <template name="postPage">
-	{{>postItem}}
+
+  <div class="post">
+    <a href="#" class="rating"></a>
+    <div class="post-content">
+      <h3> {{title}} <span> at </span> {{company}}
+          </br> <span> {{location}} </span> </h3>
+      </br>
+
+<p>  
+        <h5>Job Description: </h5>{{description}}
+      </br>
+      </br>
+        <h5>Job Requirements: </h5> {{requirements}}.
+    		</br></br>
+
+              {{#if ownPost}}<a href="{{pathFor 'postEdit'}}">Edit</a>{{/if}}
+    	</p>
+   </div>
+    <a href="{{pathFor 'postPage'}}" class="discuss btn">Apply</a>
+  </div>
+
 	<ul class="comments">
 		{{#each comments}}
 			{{> comment}}
